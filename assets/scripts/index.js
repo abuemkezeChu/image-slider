@@ -14,7 +14,6 @@ images[6] = 'assets/images/pizza.jpg'
 images[7] = 'assets/images/pizza2.jpg'
 images[8] = 'assets/images/spaghetti.jpg'
 images[9] = 'assets/images/table.jpg'
-console.log(images)
 
 const changeImage = () => {
   const imgView = document.getElementById('slide')
@@ -26,7 +25,7 @@ const changeImage = () => {
     index = 0
   }
 
-  setTimeout('changeImage()', time)
+  setTimeout(changeImage, time)
 }
 
 window.onload = changeImage

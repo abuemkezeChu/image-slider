@@ -9,7 +9,7 @@ body {
 }
 
 @keyframes scroll {
-  
+
   0% {
     transform: translateX(100%);
   }
@@ -17,6 +17,7 @@ body {
   100% {
     transform: translateX(-100%);
   }
+
 }
 
 .black-bg {
@@ -65,7 +66,7 @@ body {
   overflow: hidden;
 }
 
-.slider > img {
+.slide > img {
   width: auto;
   height: 100%;
   transition: opacity 0.5s ease-in-out;
