@@ -1,8 +1,8 @@
 'use strict'
 
 let index = 0
-let images = []
-let time = 3000
+const images = []
+const time = 3000
 
 images[0] = 'assets/images/apples.jpg'
 images[1] = 'assets/images/duck.jpg'
@@ -14,11 +14,11 @@ images[6] = 'assets/images/pizza.jpg'
 images[7] = 'assets/images/pizza2.jpg'
 images[8] = 'assets/images/spaghetti.jpg'
 images[9] = 'assets/images/table.jpg'
-console.log(images);
+console.log(images)
 
 const changeImage = () => {
-  let imgView = document.getElementById('slide')
-  let imgElement = imgView.querySelector('img')
+  const imgView = document.getElementById('slide')
+  const imgElement = imgView.querySelector('img')
   imgElement.src = images[index]
   if (index < images.length - 1) {
     index++
@@ -29,4 +29,4 @@ const changeImage = () => {
   setTimeout('changeImage()', time)
 }
 
-window.onload = changeImage;
+window.onload = changeImage
