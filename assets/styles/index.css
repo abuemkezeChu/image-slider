@@ -12,9 +12,8 @@ body {
   0% {
     transform: translateX(100%);
   }
-  
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
@@ -54,6 +53,21 @@ body {
   width: fit-content;
   white-space: nowrap;
   animation: scroll 10s linear infinite;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 46rem;
+  overflow: hidden;
+}
+
+.slider > img {
+  width: auto;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .footer {
