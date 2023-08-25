@@ -29,6 +29,8 @@ const changeImage = () => {
   } else {
     index = 0
   }
+
+  setTimeout(changeImage, time)
 }
 
 const prevImage = () => {
@@ -57,7 +59,4 @@ prevBtn.addEventListener('click', prevImage)
 
 nextBtn.addEventListener('click', nextImage)
 
-window.onload = () => {
-  changeImage()
-  setInterval(changeImage, time)
-}
+window.onload = changeImage
