@@ -29,7 +29,6 @@ const changeImage = () => {
   } else {
     index = 0
   }
-
 }
 
 const prevImage = () => {
